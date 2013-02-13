@@ -1,7 +1,9 @@
 # KanazawaLoopBus
 
-石川県金沢市の金沢周遊バスの位置を取得できます.  
-データは次のサイトから取得しています． http://vbusloc.hokutetsu.co.jp/bus/?rno=1&lang=jp  
+石川県金沢市の金沢周遊バスの位置を取得できます.
+
+データは次のサイトから取得しています． http://vbusloc.hokutetsu.co.jp/bus/?rno=1&lang=jp
+
 サイトの構造が変化するとデータが取得できなくなるので注意してください．
 
 ## Installation
