@@ -1,4 +1,6 @@
 # coding: utf-8
+require 'open-uri'
+require 'nokogiri'
 
 module KanazawaLoopBus
   class BusLocationService
