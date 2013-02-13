@@ -15,7 +15,7 @@ module KanazawaLoopBus
       raise "Service Finished" if service_finished?
       @fetch_time = Time.now
     end
-    alias_method :refetch, :fetch
+    alias_method :refetch!, :fetch
 
     def buses
       @doc.xpath('//td/img').select { |img|
