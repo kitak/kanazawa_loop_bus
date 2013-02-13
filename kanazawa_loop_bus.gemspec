@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["kei.kita2501@gmail.com"]
   gem.description   = %q{search Kanazawa Loop Bus location}
   gem.summary       = %q{search Kanazawa Loop Bus location}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/kitak/kanazawa_loop_bus"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
