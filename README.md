@@ -1,6 +1,8 @@
 # KanazawaLoopBus
 
-TODO: Write a gem description
+石川県金沢市の金沢周遊バスの位置を取得できます.
+データは次のサイトから取得しています． http://vbusloc.hokutetsu.co.jp/bus/?rno=1&lang=jp
+サイトの構造が変化するとデータが取得できなくなるので注意してください．
 
 ## Installation
 
@@ -18,7 +20,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+``
+service = KanazawaLoopBus::BusLocationService.new
+
+service.fetch_time # データを取得した時間
+service.buses[0].name # バスの名前（鏡花号，秋声号，犀星号）．
+
+# バスのおおよその位置を取得
+service.buses[0].prev_stop.name # 前のバス停の名前
+service.buses[0].next_stop.name # 次のバス停の名前
+
+service.buses[0].next_stop.next.name # 次のバス停のさらに次のバス停の名前
+```
 
 ## Contributing
 
