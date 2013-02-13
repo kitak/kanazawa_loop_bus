@@ -31,6 +31,9 @@ service.buses[0].prev_stop.name # 前のバス停の名前
 service.buses[0].next_stop.name # 次のバス停の名前
 
 service.buses[0].next_stop.next.name # 次のバス停のさらに次のバス停の名前
+
+# データの再取得
+service.refetch!
 ```
 
 ## Contributing
