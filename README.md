@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-``
+```ruby
 service = KanazawaLoopBus::BusLocationService.new
 
 service.fetch_time # データを取得した時間
