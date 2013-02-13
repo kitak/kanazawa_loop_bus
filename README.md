@@ -36,6 +36,9 @@ service.buses[0].next_stop.next.name # 次のバス停のさらに次のバス�
 service.refetch!
 ```
 
+## TODO
+- バス停の緯度経度を取得できるようにする
+
 ## Contributing
 
 1. Fork it
