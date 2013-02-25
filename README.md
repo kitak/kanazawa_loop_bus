@@ -27,10 +27,11 @@ service.fetch_time # データを取得した時間
 service.buses[0].name # バスの名前（鏡花号，秋声号，犀星号）．
 
 # バスのおおよその位置を取得
-service.buses[0].prev_stop.name # 前のバス停の名前
+service.buses[0].previous_stop.name # 前のバス停の名前
 service.buses[0].next_stop.name # 次のバス停の名前
 
 service.buses[0].next_stop.next.name # 次のバス停のさらに次のバス停の名前
+service.buses[0].previous_stop.prev.name # 前のバス停のさらに前のバス停の名前
 
 # データの再取得
 service.refetch!
@@ -38,6 +39,9 @@ service.refetch!
 
 ## TODO
 - バス停の緯度経度を取得できるようにする
+
+## NOTE
+- ruby 2.0.0-p0で動作確認済み
 
 ## Contributing
 
